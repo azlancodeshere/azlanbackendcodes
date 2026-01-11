@@ -1,20 +1,32 @@
 {
   "name": "azlan-codes",
   "version": "1.0.0",
-  "description": "a basic app to deploy",
+  "description": "a backend at azlan code channel - youtube",
+  "type": "module",
   "keywords": [
-    "node",
-    "chai"
+    "javascript",
+    "backend"
   ],
   "license": "ISC",
-  "author": "abdul yasin",
-  "type": "commonjs",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon  -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prettier": "^3.7.4"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.8.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.1",
+    "mongoose-aggregate-paginate-v2": "^1.1.4",
+    "multer": "^2.0.2"
   }
 }
